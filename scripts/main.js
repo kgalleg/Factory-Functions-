@@ -99,26 +99,49 @@ console.log(contactFactory);
 // Polar Records works with Pop artists.
 // Create an array for each of these record labels.
 
-const recordLabels = ["JumpStop", "Chatten Records","Polar Records"]
+const jumpStopRecords = []
+const chattenRecords = []
+const polarRecords = []
 
 // Create a factory function for each possible genre (e.g. createBluegrassArtist()). Then invoke the appropriate function for each of the following artists and place the resulting object in the corresponding label array.
 
-// const createGenre = (genre) => {
-// return {
-//     country:
-//     pop: 
-//     funk:
-//     rap:
-//     bluegrass:
+// and then have 5 different functions (one for each genre)  that will return an object of artist info similar to
+// ```{
+// name: "Joe Smith",
+// age: 35,
+// genre: "pop"
+// }```
 
-//     }
-// }
+// genre's country, pop, funk, rap, bluegrass
 
-// Bruce Atikins is a Country artist and is 23 years old
+const countryGenre = () => {
+    return {
+    artistName:"Bruce Atikins",
+    artistAge: 23,
+    genre: "country"
+    },
+    {
+    artistName:"Avilee Dallas",
+    artistAge: 19,
+    genre: "country"   
+    }
+}
+
+
+//^^ Bruce Atikins is a Country artist and is 23 years old 
 // Jensen Brown is a Pop artist and is 20 years old
 // Dre Funkz is a Funk artist and is 25 years old
 // Dusta Grimes is a Rap artist and is 21 years old
 // Bartholomew Danielson is a Bluegrass artist and is 23 years old
-// Avilee Dallas is a Country artist and is 19 years old
+// ^^ Avilee Dallas is a Country artist and is 19 years old
 // Austin Kinkaid is a Pop artist and is 22 years old
 // Loyoncé Branis is a Rap artist and is 27 years old
+
+
+// hey it's a bit of a repetitive exercise to help give you practice in writing factory functions. you'll start off with three empty arrays (one for each record company, and then have 5 different functions (one for each genre)  that will return an object of artist info similar to
+// ```{
+// name: "Joe Smith",
+// age: 35,
+// genre: "pop"
+// }```
+// once the object of artist info has been returned, you will push it into the appropriate record company array based on the genre
